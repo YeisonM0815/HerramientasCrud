@@ -70,7 +70,7 @@ namespace HerramientasCrud
                 }
 
                 dataGridView1.Rows.Add(Id, Nombre1, descripcion, marca, precio, stock);
-                
+               
             }
             LimpiarCampos();
         }
