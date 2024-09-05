@@ -40,14 +40,15 @@
             label5 = new Label();
             textBox6 = new TextBox();
             numericUpDown1 = new NumericUpDown();
-            button1 = new Button();
+            guardar = new Button();
             button2 = new Button();
             button3 = new Button();
             label6 = new Label();
             label7 = new Label();
             button4 = new Button();
-            button5 = new Button();
             dataGridView1 = new DataGridView();
+            button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -151,14 +152,15 @@
             numericUpDown1.Size = new Size(47, 23);
             numericUpDown1.TabIndex = 13;
             // 
-            // button1
+            // guardar
             // 
-            button1.Location = new Point(43, 274);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 32);
-            button1.TabIndex = 14;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = true;
+            guardar.Location = new Point(43, 274);
+            guardar.Name = "guardar";
+            guardar.Size = new Size(100, 32);
+            guardar.TabIndex = 14;
+            guardar.Text = "Guardar";
+            guardar.UseVisualStyleBackColor = true;
+            guardar.Click += guardar_Click;
             // 
             // button2
             // 
@@ -207,15 +209,6 @@
             button4.Text = "Editar";
             button4.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            button5.Location = new Point(380, 322);
-            button5.Name = "button5";
-            button5.Size = new Size(98, 32);
-            button5.TabIndex = 19;
-            button5.Text = "Borrar";
-            button5.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -224,18 +217,37 @@
             dataGridView1.Size = new Size(745, 304);
             dataGridView1.TabIndex = 0;
             // 
+            // button5
+            // 
+            button5.Location = new Point(393, 322);
+            button5.Name = "button5";
+            button5.Size = new Size(98, 32);
+            button5.TabIndex = 21;
+            button5.Text = "Borrar";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(602, 372);
+            button6.Name = "button6";
+            button6.Size = new Size(98, 32);
+            button6.TabIndex = 22;
+            button6.Text = "Borrar";
+            button6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(974, 490);
-            Controls.Add(button4);
+            Controls.Add(button6);
             Controls.Add(button5);
+            Controls.Add(button4);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(guardar);
             Controls.Add(numericUpDown1);
             Controls.Add(textBox6);
             Controls.Add(textBox5);
@@ -270,13 +282,14 @@
         private Label label5;
         private TextBox textBox6;
         private NumericUpDown numericUpDown1;
-        private Button button1;
+        private Button guardar;
         private Button button2;
         private Button button3;
         private Label label6;
         private Label label7;
         private Button button4;
-        private Button button5;
         private DataGridView dataGridView1;
+        private Button button5;
+        private Button button6;
     }
 }
