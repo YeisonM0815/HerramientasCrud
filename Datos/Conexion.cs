@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    internal class Conexion
+    public class Conexion
     {
     }
 }

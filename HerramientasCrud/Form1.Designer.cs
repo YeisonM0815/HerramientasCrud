@@ -29,27 +29,26 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtNombre = new TextBox();
+            txtDescripcion = new TextBox();
             label2 = new Label();
-            textBox3 = new TextBox();
+            txtMarca = new TextBox();
             label3 = new Label();
-            textBox4 = new TextBox();
+            txtPrecio = new TextBox();
             label4 = new Label();
-            textBox5 = new TextBox();
+            txtStock = new TextBox();
             label5 = new Label();
-            textBox6 = new TextBox();
-            numericUpDown1 = new NumericUpDown();
+            txtResultado = new TextBox();
+            numericUpDownID = new NumericUpDown();
             guardar = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            nombre = new Button();
+            cortar = new Button();
             label6 = new Label();
             label7 = new Label();
-            button4 = new Button();
+            editar = new Button();
+            borrar = new Button();
             dataGridView1 = new DataGridView();
-            button5 = new Button();
-            button6 = new Button();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownID).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -63,19 +62,19 @@
             label1.TabIndex = 1;
             label1.Text = "Nombre:\r\n";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Location = new Point(12, 36);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(161, 23);
-            textBox1.TabIndex = 2;
+            txtNombre.Location = new Point(12, 36);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(161, 23);
+            txtNombre.TabIndex = 2;
             // 
-            // textBox2
+            // txtDescripcion
             // 
-            textBox2.Location = new Point(12, 89);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(161, 23);
-            textBox2.TabIndex = 4;
+            txtDescripcion.Location = new Point(12, 89);
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.Size = new Size(161, 23);
+            txtDescripcion.TabIndex = 4;
             // 
             // label2
             // 
@@ -87,12 +86,12 @@
             label2.TabIndex = 3;
             label2.Text = "Descripción:";
             // 
-            // textBox3
+            // txtMarca
             // 
-            textBox3.Location = new Point(12, 139);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(161, 23);
-            textBox3.TabIndex = 6;
+            txtMarca.Location = new Point(12, 139);
+            txtMarca.Name = "txtMarca";
+            txtMarca.Size = new Size(161, 23);
+            txtMarca.TabIndex = 6;
             // 
             // label3
             // 
@@ -104,12 +103,12 @@
             label3.TabIndex = 5;
             label3.Text = "Marca:";
             // 
-            // textBox4
+            // txtPrecio
             // 
-            textBox4.Location = new Point(12, 192);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(161, 23);
-            textBox4.TabIndex = 8;
+            txtPrecio.Location = new Point(12, 192);
+            txtPrecio.Name = "txtPrecio";
+            txtPrecio.Size = new Size(161, 23);
+            txtPrecio.TabIndex = 8;
             // 
             // label4
             // 
@@ -121,12 +120,12 @@
             label4.TabIndex = 7;
             label4.Text = "Precio:";
             // 
-            // textBox5
+            // txtStock
             // 
-            textBox5.Location = new Point(12, 245);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(161, 23);
-            textBox5.TabIndex = 10;
+            txtStock.Location = new Point(12, 245);
+            txtStock.Name = "txtStock";
+            txtStock.Size = new Size(161, 23);
+            txtStock.TabIndex = 10;
             // 
             // label5
             // 
@@ -138,23 +137,23 @@
             label5.TabIndex = 9;
             label5.Text = "Stock:";
             // 
-            // textBox6
+            // txtResultado
             // 
-            textBox6.Location = new Point(66, 407);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(149, 23);
-            textBox6.TabIndex = 12;
+            txtResultado.Location = new Point(66, 407);
+            txtResultado.Name = "txtResultado";
+            txtResultado.Size = new Size(149, 23);
+            txtResultado.TabIndex = 12;
             // 
-            // numericUpDown1
+            // numericUpDownID
             // 
-            numericUpDown1.Location = new Point(13, 407);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(47, 23);
-            numericUpDown1.TabIndex = 13;
+            numericUpDownID.Location = new Point(13, 407);
+            numericUpDownID.Name = "numericUpDownID";
+            numericUpDownID.Size = new Size(47, 23);
+            numericUpDownID.TabIndex = 13;
             // 
             // guardar
             // 
-            guardar.Location = new Point(43, 274);
+            guardar.Location = new Point(66, 274);
             guardar.Name = "guardar";
             guardar.Size = new Size(100, 32);
             guardar.TabIndex = 14;
@@ -162,23 +161,25 @@
             guardar.UseVisualStyleBackColor = true;
             guardar.Click += guardar_Click;
             // 
-            // button2
+            // nombre
             // 
-            button2.Location = new Point(13, 436);
-            button2.Name = "button2";
-            button2.Size = new Size(98, 32);
-            button2.TabIndex = 15;
-            button2.Text = "Nombre";
-            button2.UseVisualStyleBackColor = true;
+            nombre.Location = new Point(13, 436);
+            nombre.Name = "nombre";
+            nombre.Size = new Size(98, 32);
+            nombre.TabIndex = 15;
+            nombre.Text = "Nombre";
+            nombre.UseVisualStyleBackColor = true;
+            nombre.Click += nombre_Click;
             // 
-            // button3
+            // cortar
             // 
-            button3.Location = new Point(117, 436);
-            button3.Name = "button3";
-            button3.Size = new Size(98, 32);
-            button3.TabIndex = 16;
-            button3.Text = "Cortar";
-            button3.UseVisualStyleBackColor = true;
+            cortar.Location = new Point(117, 436);
+            cortar.Name = "cortar";
+            cortar.Size = new Size(98, 32);
+            cortar.TabIndex = 16;
+            cortar.Text = "Cortar";
+            cortar.UseVisualStyleBackColor = true;
+            cortar.Click += cortar_Click;
             // 
             // label6
             // 
@@ -200,70 +201,63 @@
             label7.TabIndex = 18;
             label7.Text = "ID:\r\n";
             // 
-            // button4
+            // editar
             // 
-            button4.Location = new Point(276, 322);
-            button4.Name = "button4";
-            button4.Size = new Size(98, 32);
-            button4.TabIndex = 20;
-            button4.Text = "Editar";
-            button4.UseVisualStyleBackColor = true;
+            editar.Location = new Point(9, 312);
+            editar.Name = "editar";
+            editar.Size = new Size(98, 32);
+            editar.TabIndex = 20;
+            editar.Text = "Editar";
+            editar.UseVisualStyleBackColor = true;
+            editar.Click += editar_Click;
+            // 
+            // borrar
+            // 
+            borrar.Location = new Point(126, 312);
+            borrar.Name = "borrar";
+            borrar.Size = new Size(98, 32);
+            borrar.TabIndex = 21;
+            borrar.Text = "Borrar";
+            borrar.UseVisualStyleBackColor = true;
+            borrar.Click += borrar_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(217, 12);
+            dataGridView1.Location = new Point(222, 12);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(745, 304);
-            dataGridView1.TabIndex = 0;
-            // 
-            // button5
-            // 
-            button5.Location = new Point(393, 322);
-            button5.Name = "button5";
-            button5.Size = new Size(98, 32);
-            button5.TabIndex = 21;
-            button5.Text = "Borrar";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(602, 372);
-            button6.Name = "button6";
-            button6.Size = new Size(98, 32);
-            button6.TabIndex = 22;
-            button6.Text = "Borrar";
-            button6.UseVisualStyleBackColor = true;
+            dataGridView1.Size = new Size(740, 294);
+            dataGridView1.TabIndex = 22;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(974, 490);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
+            Controls.Add(dataGridView1);
+            Controls.Add(borrar);
+            Controls.Add(editar);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(cortar);
+            Controls.Add(nombre);
             Controls.Add(guardar);
-            Controls.Add(numericUpDown1);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
+            Controls.Add(numericUpDownID);
+            Controls.Add(txtResultado);
+            Controls.Add(txtStock);
             Controls.Add(label5);
-            Controls.Add(textBox4);
+            Controls.Add(txtPrecio);
             Controls.Add(label4);
-            Controls.Add(textBox3);
+            Controls.Add(txtMarca);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(txtDescripcion);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtNombre);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownID).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -271,25 +265,24 @@
 
         #endregion
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtNombre;
+        private TextBox txtDescripcion;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox txtMarca;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox txtPrecio;
         private Label label4;
-        private TextBox textBox5;
+        private TextBox txtStock;
         private Label label5;
-        private TextBox textBox6;
-        private NumericUpDown numericUpDown1;
+        private TextBox txtResultado;
+        private NumericUpDown numericUpDownID;
         private Button guardar;
-        private Button button2;
-        private Button button3;
+        private Button nombre;
+        private Button cortar;
         private Label label6;
         private Label label7;
-        private Button button4;
+        private Button editar;
+        private Button borrar;
         private DataGridView dataGridView1;
-        private Button button5;
-        private Button button6;
     }
 }
